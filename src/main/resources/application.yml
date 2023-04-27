@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    jdbc-url: jdbc:sqlserver://192.168.100.5:1435;databaseName=Sentrifugo_UAT;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Sql@2019
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  seconddatasource:
+    jdbc-url: jdbc:sqlserver://192.168.100.5:1435;databaseName=Sentrifugo;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Sql@2019
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  thirddatasource:
+    jdbc-url: jdbc:mysql://192.168.100.7:3306/Live_News
+    username: sagarsoft
+    password: Mysql@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
